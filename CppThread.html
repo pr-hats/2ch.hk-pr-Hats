@@ -1,0 +1,928 @@
+<p>
+	<h3>TL;DR</h3>
+	<p>
+		<b>Q: </b>
+		<i>Я хочу тотчас вкатиться, а разбираться буду в процессе. Что я должен делать?</i>
+		
+		<br>
+		
+		<b>Q: </b>
+		<i>Не уверен, что хочу изучать C++. Как мне пощупать его без лишней ебли?</i>
+		
+		<br>
+		
+		<b>A: </b>
+		Читаешь <a href="https://goo.gl/kVaela">эту книжку</a>, смотришь упражнения из нее и суешь в <a href="http://ideone.com">онлайн-компилятор</a>. Сообщения компилятора об ошибках копипастишь в гугл, ответы на возникающие у тебя вопросы ищешь в предыдущих тредах, спрашиваешь в этом треде, если не нашел. Если тебя послали на хуй или не ответили, то ты спросил платину, читай предыдущие треды внимательнее.
+	</p>
+</p>
+
+<p>
+	<h3>Памятка ньюфагу</h3>
+
+	<ul>
+		<li>Вопросы по синтаксису <b><span style="color:#FF0000">идут на хуй</span></b></li>
+		<li>Лабы <b><span style="color:#FF0000">идут на хуй</span></b></li>
+		<li>"Как мне сделать Х на чистых крестах без библиотек" <b><span style="color:#FF0000">идут на хуй</span></b></li>
+		<li>Все идут на хуй</li>
+		<li>Хейтер сосет члены на пару со своей мамашей</li>
+	</ul>
+
+	<p>
+		Небольшие фрагменты кода размещай в треде при помощи тега <b>[code]</b> и <a href="https://github.com/ololoepepe/MakabaCode">жабаскрипт-костыля</a>. Для больших фрагментов используй <a href="http://ideone.com">внешние</a> <a href="http://pastebin.com">сервисы</a>.
+	</p>
+</p>
+
+<p>
+	<ul>
+		<li><a href="https://2ch.hk/pr/res/629715.html">Старший брат</a></li>
+		<li><a href="https://2ch.hk/pr/res/676033.html">Предыдущий</a></li>
+	</ul>
+</p>
+
+<hr>
+
+<p>
+	<h2>FAQ</h2>
+
+	<p>
+		<h3>Мотивация</h3>
+		
+		<p>
+			<b>Q: </b>
+			<i>Почему стоит использовать именно C++?</i>
+			
+			<br>
+			
+			<b>A: </b>
+			Ни один язык не идеален, но по совокупности киллер-фич C++ оставляет все остальные языки позади. Вот основные три:
+			
+			<ul>
+				<li>
+					<b><span style="color:#0000FF">Скорость</span></b>
+					
+					<br>
+					
+					C++ действительно быстрый язык — вместе с <i>C</i>, его прародителем, они с большим отрывом уделывают по скорости <b>все</b> остальные языки высокого уровня. Код на C++, как правило, медленнее аналогичного кода на C приблизительно на 0-20% <span class="spoiler">а в ряде случаев C++ оказывается даже быстрее</span>, причем замедление появляется только при использовании высокоуровневых конструкций (в C++ ты никогда не платишь за то, чего не используешь). Таким образом, если тебе требуется высокопроизводительный код, C++ станет отличным выбором.
+				</li>
+				
+				<li>
+					<b><span style="color:#0000FF">Мощь</span></b>
+					
+					<br>
+					
+					C++ является одним из наиболее выразительных и мощных языков и позволяет использовать большинство существующих парадигм. Его философия построена на минимальном ограничении программиста в выборе методов и инструментов <s>простреливания ноги</s> решения задачи. Как следствие, используя C++, ты можешь не думать о том, как обойти искуственные ограничения языка, а беспрепятственно выбрать наиболее подходящие к ситуации средства.
+				</li>
+				
+				<li>
+					<b><span style="color:#0000FF">Популярность</span></b>
+					
+					<br>
+					
+					C++ по-настоящему популярен. На нем написаны десятки тысяч приложений и миллиарды строк кода, о нем написаны сотни книг, он до мельчайших подробностей документирован и стандартизован. Используя C++, ты никогда не останешься без работы или поддержки комьюнити.
+				</li>
+			</ul>
+		</p>
+
+		<p>
+		<div class="spoil">
+		<div class="smallfont"><input type="button" value="MOAR" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'MOAR'; }"/>
+		</div>
+		<div class="alt2">
+		<div style="display: none;">
+		
+		<p>
+			<p>
+				<b>Q: </b>
+				<i>Но он же давно устарел!</i>
+				
+				<br>
+				
+				<b>A: </b>
+				Современный C++ весьма далек от языка, которым он был в 1998 году. В настоящее время кресты живее всех живых, их развитие движется семимильными шагами, а новые стандарты принимаются каждые три года, сохраняя при этом полную обратную совместимость с предыдущими. К сожалению, из-за обилия некачественной литературы по С++, в которой игнорируются новые средства языка, бытует мнение о его "несовременности".
+			</p>
+
+			<p>
+				<b>Q: </b>
+				<i>Сейчас все пишут на %languagename, а кресты сосут у него!</i>
+				
+				<br>
+				
+				<b>A: </b>
+				Нужно понимать, что используемый язык должен соответствовать поставленной задаче. Никому не придет в голову писать на C++ скрипты или веб-фронтенд <span class="spoiler">хотя это <a href="https://habrahabr.ru/post/142585">вполне</a> <a href="http://blog.molecular-matters.com/2013/08/27/using-runtime-compiled-c-code-as-a-scripting-language">возможно</a></span>, но лишь немногие языки могут соперничать с ним по разнообразию решаемых задач.
+			</p>
+
+			<p>
+				<b>Q: </b>
+				<i>Хуле тут так сложно? Я открыл учебник, там какой-то ад!</i>
+				
+				<br>
+				
+				<b>A: </b>
+				Попробуй учебники, изданные после 2011 года, в которых рассматриваются возможности новых стандартов (<i>C++11</i> и <i>C++14</i>). <a href="https://en.wikipedia.org/wiki/C%2B%2B11#Core_language_usability_enhancements">Эти</a> <a href="https://en.wikipedia.org/wiki/C%2B%2B14#New_language_features">фичи</a> не только добавили выразительности, но и серьезно упростили жизнь разработчиков. Теперь программировать на C++ стало проще, чем когда-либо! <span class="spoiler">Это не отменяет необходимости прочитать несколько серьезных книжек, чтобы написать на нем что-то годное</span>. Тем не менее, да, C++ это <b>по-настоящему сложный</b> язык. Его никак не получится выучить за 21 день, ну вот совсем никак. <span class="spoiler">Именно высокий порог вхождения повышает твою ценность как специалиста, не позволяя нанять вместо тебя индуса за еду</span>. Более того, крайне нежелательно пытаться изучить его первым, если ты раньше вообще не программировал. С большой вероятностью это приведет к разочарованию и потере времени. Гораздо лучше будет начать с другого языка и базовых вещей <span class="spoiler">алгоритмы, архитектура пека, операционные системы</span>, а уже потом вернуться к крестам.
+			</p>
+		</p>
+
+		</div>
+		</div>
+		</div>
+		</p>
+	</p>
+	
+	<hr>
+	
+	<p>
+		<h3>Литература</h3>
+		
+		<p>
+			<b>Q: </b>
+			<i>Окей, я решил вкатиться. Какие же книги мне читать?</i>
+			
+			<br>
+			
+			<b>A: </b>
+			Специально для тебя аноны /pr собрали уникальную коллекцию отборной литературы по крестам. Только лучшие книги, последние издания, без хуев! Выбирай категорию и обмазывайся:
+			
+			<ul>
+				<li>
+					<p>
+						<h3>Для нюфань</h3>
+						<p>
+							Учебники для начинающих. Все примерно одинаковой годноты, читать имеет смысл только какой-нибудь один, который больше приглянется:
+						</p>
+						
+						<p>
+						<div>
+						<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+						<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+							
+							<tr>
+								<th>Автор(ы)</th>
+								<th>Название</th>
+								<th>Год</th>
+								<th>Ссылка</th>
+							</tr>
+							
+							<tr>
+								<td>Стэнли Липпман, Жози Лажойе и Барбара Му</td>
+								<td>Язык программирования C++</td>
+								<td>2014</td>
+								<td><a href="https://goo.gl/kVaela">https://goo.gl/kVaela</a></td>
+							</tr>
+							
+							<tr>
+								<td>Стивен Прата</td>
+								<td>Язык программирования C++</td>
+								<td>2012</td>
+								<td><a href="https://goo.gl/z7kA8u">https://goo.gl/z7kA8u</a></td>
+							</tr>
+							
+							<tr>
+								<td>Бьерн Страуструп</td>
+								<td>Программирование. Принципы и практика использования C++</td>
+								<td>2011</td>
+								<td><a href="https://goo.gl/nAFUXa">https://goo.gl/nAFUXa</a></td>
+							</tr>
+
+						</table>
+						</div>
+						</p>
+					</p>
+				</li>
+			</ul>
+		</p>
+		
+		<p>
+		<div class="spoil">
+		<div class="smallfont"><input type="button" value="MOAR" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'MOAR'; }"/>
+		</div>
+		<div class="alt2">
+		<div style="display: none;">
+		
+		<p>
+			<p>	
+				<p>
+					<ul>
+						<li>
+							<p>
+								Кроме того, есть еще пара старых добрых учебников для ньюфагов. Часть информации в них устарела, но многие считают, что это компенсируется их большей, по сравнению с современными учебниками, понятностью:
+							</p>
+							
+							<p>
+							<div>
+							<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+							<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+								<tr>
+									<th>Автор(ы)</th>
+									<th>Название</th>
+									<th>Год</th>
+									<th>Ссылка</th>
+								</tr>
+								
+								<tr>
+									<td>Герберт Шилдт</td>
+									<td>C++. Базовый курс</td>
+									<td>2010</td>
+									<td><a href="https://goo.gl/qMLAFl">https://goo.gl/qMLAFl</a></td>
+								</tr>
+								
+								<tr>
+									<td>Роберт Лафоре</td>
+									<td>Объектно-ориентированное программирование в C++</td>
+									<td>2004</td>
+									<td><a href="https://goo.gl/QvjR6x">https://goo.gl/QvjR6x</a></td>
+								</tr>
+								
+							</table>
+							</div>
+							</p>
+						</li>
+					
+						<li>
+							<p>
+								<h3>Best practices</h3>
+								<p>
+									Книги про основные подводные камни для тех, кто осилил предыдущий пункт. Следует пролистать все:
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Скотт Мейерс</td>
+										<td>Эффективное использование C++</td>
+										<td>2005</td>
+										<td><a href="https://goo.gl/wsDXGz">https://goo.gl/wsDXGz</a></td>
+									</tr>
+									
+									<tr>
+										<td>Скотт Мейерс</td>
+										<td>Наиболее эффективное использование C++</td>
+										<td>1996</td>
+										<td><a href="https://goo.gl/tHa0tO">https://goo.gl/tHa0tO</a></td>
+									</tr>
+									
+									<tr>
+										<td>Скотт Мейерс</td>
+										<td>Эффективный и современный C++</td>
+										<td>2015</td>
+										<td><a href="https://goo.gl/Im8VYQ">https://goo.gl/Im8VYQ</a></td>
+									</tr>
+									
+									<tr>
+										<td>Скотт Мейерс</td>
+										<td>Эффективное использование STL</td>
+										<td>2002</td>
+										<td><a href="https://goo.gl/QtS8Dc">https://goo.gl/QtS8Dc</a></td>
+									</tr>
+									
+									<tr>
+										<td>Герб Саттер и Андрей Александреску</td>
+										<td>Стандарты программирования на языке C++</td>
+										<td>2005</td>
+										<td><a href="https://goo.gl/Cpk4YR">https://goo.gl/Cpk4YR</a></td>
+									</tr>
+								
+								</table>
+								</div>
+								</p>
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Проектирование</h3>
+								<p>
+									Следует пролистать все перед переходом от лаб к написанию настоящего софта.<br>
+									Последний пункт есть квинтэссенция <b>ГИБКОСТИ</b>, поэтому стоит прочитать его в любом случае, чтобы охуеть от того, как можно делать:
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Ален Голуб</td>
+										<td>Веревка достаточной длины, чтобы выстрелить себе в ногу</td>
+										<td>2001</td>
+										<td><a href="https://goo.gl/fBmuxp">https://goo.gl/fBmuxp</a></td>
+									</tr>
+									
+									<tr>
+										<td>Джеймс Коплиен</td>
+										<td>Программирование на C++</td>
+										<td>2005</td>
+										<td><a href="https://goo.gl/Y1WGdU">https://goo.gl/Y1WGdU</a></td>
+									</tr>
+									
+									<tr>
+										<td>Андрей Александреску</td>
+										<td>Современное проектирование на C++</td>
+										<td>2002</td>
+										<td><a href="https://goo.gl/e1V5BC">https://goo.gl/e1V5BC</a></td>
+									</tr>
+								
+								</table>
+								</div>
+								</p>
+							</p>
+							
+							<p>
+								<b><span style="color:#FF0000">Ахтунг!</span></b>
+								
+								<br>
+								
+								Предыдущие два раздела дополняют, а не заменяют классические книги о лучших практиках разработки без привязки к конкретному языку (<a href="https://vk.com/doc10903696_270848153">Макконнелл</a>, <a href="https://vk.com/doc10903696_267393598?hash=7964419007fe197839&dl=ef42cd94edccf78abb">Uncle Bob</a>, <a href="https://vk.com/doc10903696_314221824?hash=14ac10c808998cdd22&dl=03d342de0ec203ebb9">GoF</a>).
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Справочники</h3>
+								<p>
+									Наиболее детальные описания языка. Удобно использовать как референс, читать от корки до корки не обязательно:
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Бьерн Страуструп</td>
+										<td>Язык программирования C++</td>
+										<td>2013</td>
+										<td><a href="https://goo.gl/XkAiOX">https://goo.gl/XkAiOX</a> <i>(на ангельском)</i></td>
+									</tr>
+									
+									<tr>
+										<td>Бьерн Страуструп</td>
+										<td>Язык программирования C++</td>
+										<td>2010</td>
+										<td><a href="https://goo.gl/iZBDiV">https://goo.gl/iZBDiV</a> <b>&lt;устарело&gt;</b></td>
+									</tr>
+								
+								</table>
+								</div>
+								</p>
+							
+								<p>
+									Кроме того, на ангельском доступны стандарты <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3337.pdf">C++11</a>, <a href="https://github.com/cplusplus/draft/raw/master/papers/n4140.pdf">C++14</a>, а также последняя версия черновика стандарта <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4567.pdf">C++17</a>.
+								</p>
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Тонкости языка</h3>
+								<p>
+									Книги для тех, кто возлюбил кресты всей душой и желает углубиться в детали:
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Герб Саттер</td>
+										<td>Решение сложных задач на C++</td>
+										<td>2002</td>
+										<td><a href="https://goo.gl/iWaa6S">https://goo.gl/iWaa6S</a></td>
+									</tr>
+									
+									<tr>
+										<td>Герб Саттер</td>
+										<td>Новые сложные задачи на C++</td>
+										<td>2004</td>
+										<td><a href="https://goo.gl/4nn512">https://goo.gl/4nn512</a></td>
+									</tr>
+									
+									<tr>
+										<td>Бьерн Страуструп</td>
+										<td>Дизайн и эволюция C++</td>
+										<td>1994</td>
+										<td><a href="https://goo.gl/FqbPwo">https://goo.gl/FqbPwo</a> <i>(для легкого чтения)</i></td>
+									</tr>
+								
+								</table>
+								</div>
+								</p>
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Отдельные аспекты</h3>
+								<p>
+									Читать по необходимости:
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Описание</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Энтони Уильямс</td>
+										<td>Параллельное программирование на C++ в действии</td>
+										<td>2012</td>
+										<td>Про использование <i>std::thread</i><br> и других фич последних стандартов<br> для разработки многопоточных приложений</td>
+										<td><a href="https://goo.gl/qJfBkD">https://goo.gl/qJfBkD</a></td>
+									</tr>
+									
+									<tr>
+										<td>Николаи Джоссатис</td>
+										<td>C++. Стандартная библиотека</td>
+										<td>2012</td>
+										<td>Детальный справочник по STL и<br> остальным частям стандартной библиотеки</td>
+										<td><a href="https://goo.gl/PEyiMH">https://goo.gl/PEyiMH</a></td>
+									</tr>
+									
+									<tr>
+										<td>Дэвид Абрахамс и Алексей Гуртовой</td>
+										<td>Шаблонное метапрограммирование на C++</td>
+										<td>2009</td>
+										<td>"Мы встроили в шаблоны C++ функциональный<br> язык программирования, чтобы ты мог<br> программировать, пока программируешь"</td>
+										<td><a href="https://goo.gl/isSt7j">https://goo.gl/isSt7j</a></td>
+									</tr>
+									
+									<tr>
+										<td>Дэвид Вандевурд и Николаи Джоссатис</td>
+										<td>Шаблоны C++. Справочник разработчика</td>
+										<td>2003</td>
+										<td>После прочтения этой книги тебя не приведут<br> в ужас даже исходники <i>boost::MPL</i></td>
+										<td><a href="https://goo.gl/0M4NpG">https://goo.gl/0M4NpG</a></td>
+									</tr>
+									
+									<tr>
+										<td>Роберт Седжвик</td>
+										<td>Фундаментальные алгоритмы на C++</td>
+										<td>2001</td>
+										<td>Стандартный курс алгоритмов с примерами<br> на C++. Для его чтения не нужно знать<br> мертвые языки, в отличие от этого вашего Кнута</td>
+										<td>
+											<a href="https://goo.gl/4jwxSl">https://goo.gl/4jwxSl</a> <i>(части 1-4)</i>,<br>
+											<a href="https://goo.gl/yDuQgG">https://goo.gl/yDuQgG</a> <i>(часть 5)<i>
+										</td>
+									</tr>
+								
+								</table>
+								</div>
+								</p>
+							</p>
+						</li>
+						
+					</ul>
+				</p>
+			</p>
+		</p>
+
+		</div>
+		</div>
+		</div>
+		</p>
+	</p>
+	
+	<hr>
+	
+	<p>
+		<h3>Другие обучающие материалы</h3>
+		
+		<p>
+			<b>Q: </b>
+			<i>Я не умею читать.</i>
+			
+			<br>
+			
+			<b>A: </b>
+			Можешь посмотреть какой-нибудь онлайн-курс: <a href="https://www.youtube.com/watch?v=atVgLRzl3rI">раз</a>, <a href="https://youtube.com/watch?v=MOpF5lk3cLY">два</a>, <a href="https://stepic.org">три</a>
+		</p>
+		
+		<p>
+			<b>Q: </b>
+			<i>Не люблю, когда льют воду. Хочу коротких материалов по существу.</i>
+			
+			<br>
+			
+			<b>A: </b>
+			Вот тебе блоги, факи, референсы и всякое такое:
+			
+			<ul>
+				<li><a href="http://alenacpp.blogspot.ru">Годный блог</a>, в котором все просто и понятно <span class="spoiler">тян не нужны кококок борщ</span></li>
+				<li><a href="http://scrutator.me">Блог</a> с хорошо расписанными фичами новых стандартов</li>
+				<li>Краткие описания библиотечных функций и контейнеров - <a href="http://ru.cppreference.com/w">на русском</a> или более подробно <a href="http://en.cppreference.com/w">на ангельском</a></li>
+				<li><a href="http://herbsutter.com">Блог</a> Герба Саттера (на ангельском)</li>
+				<li><a href="http://scottmeyers.blogspot.ru">Блог</a> Скотта Мейерса (на ангельском)</li>
+				<li><a href="https://katecpp.wordpress.com">Блог</a> еще одной тянки, много о Qt и оптимизации (на ангельском)</li>
+				<li><a href="https://www.quora.com/What-are-the-best-blogs-on-C++">Куча</a> других блогов (на ангельском)</li>
+				<li><a href="https://isocpp.org/wiki/faq">Большой FAQ</a> по C++ (на ангельском)</li>
+				<li><a href="https://youtube.com/user/CppCon/videos">Видео</a> с CppCon (на ангельском)</li>
+			</ul>
+		</p>
+	</p>
+	
+	<hr>
+	
+	<p>
+		<h3>Софт и библиотеки</h3>
+		
+		<p>
+			<b>Q: </b>
+			<i>Я готов начать погроммировать! Куда мне писать код?</i>
+			
+			<br>
+			
+			<b>A: </b>
+			На этапе написания хэллоуворлдов можно не ебаться с установкой софта, а использовать онлайн-компиляторы: <a href="http://ideone.com">раз</a>, <a href="https://gcc.godbolt.org">два</a>, <a href="http://cpp.sh">три</a>, <a href="https://repl.it/languages/cpp">четыре</a>. Для работы над более серьезными вещами удобнее всего установить какую-нибудь IDE. Ниже приведены несколько хороших вариантов:
+			
+			<p>
+				<div>
+				<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+				<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+							
+					<tr>
+						<th>Платформа</th>
+						<th>Название</th>
+						<th>Описание</th>
+						<th>Ссылка</th>
+					</tr>
+									
+					<tr>
+						<td>Windows</td>
+						<td><b>Microsoft™ Visual Studio®</b></td>
+						<td>
+							Общепризнанно самая продвинутая и удобная IDE, не имеющая равных по части автодополнения и возможностей отладчика. По ссылкам справа можно скачать бесплатную редакцию последнего выпуска (2015 Community Edition). Кроме того, существуют редакции с расширенными возможностями (Professional и Enterprise). Они стоят сотни денег, но если ты студент вуза, подписанного на Dreamspark Premium, то ты можешь получить их безвоздмездно (то есть даром). Многим новичкам интерфейс студии кажется чересчур сложным, так что обязательно прочти <a href="https://goo.gl/JMd57G">этот гайд</a>, если у тебя возникают проблемы с компиляцией хэллоуворда
+						</td>
+						<td>
+							<a href="https://goo.gl/qgAAc6">https://goo.gl/qgAAc6</a> <i>(русская версия)</i> или<br>
+							<a href="https://goo.gl/WIPW9L">https://goo.gl/WIPW9L</a> <i>(ангельская версия)</i>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Все</td>
+						<td><b>CodeLite</b></td>
+						<td>
+							Простая, легковесная, кроссплатформенная, швабодная IDE. Менее навороченная, чем студия, но среди бесплатных вне конкуренции. Вероятно, это наилучший вариант для новичка с *nix. Под Windows же требует чуть больше ебли с установкой компилятора MinGW/LLVM
+						</td>
+						<td>
+							<a href="http://codelite.org/">http://codelite.org/</a>,<br>
+							<i>"sudo aptitude install codelite codelite-plugins"</i><br> 
+							для установки под *nix
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Все</td>
+						<td><b>CLion</b></td>
+						<td>
+							IDE, призванная похоронить Visual Studio <span class="spoiler">пока не особо получается</span>. Она стоит денег, но можно украсть почти не протухшую версию на торрентах или получить бесплатную лицензию на год по скану студбилета, если ты студент. Удобные свистелки и перделки присутствуют. Тормоза и баги присутствуют. Кросплатформенность присутствует
+						</td>
+						<td>
+							<a href="https://www.jetbrains.com/clion">https://www.jetbrains.com/clion</a>
+						</td>
+					</tr>
+							
+				</table>
+				</div>
+			</p>
+		</p>
+		
+		<p>
+		<div class="spoil">
+		<div class="smallfont"><input type="button" value="MOAR" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'MOAR'; }"/>
+		</div>
+		<div class="alt2">
+		<div style="display: none;">
+		
+		<p>
+			<p>
+				<p>
+					<a href="https://goo.gl/qkujDP">Здесь</a> ты можешь найти все остальные существующие IDE, если ни одна из вышеперечисленных тебе не приглянулась.
+				</p>
+				
+				<p>
+					Разумеется, установка IDE вовсе не обязательна. Ты можешь <a href="https://notepad-plus-plus.org">использовать</a> <a href="http://www.vim.org">текстовый</a> <a href="https://www.gnu.org/software/emacs">редактор</a> в связке с <a href="https://gcc.gnu.org">каким</a>-<a href="http://www.mingw.org">нибудь</a> <a href="http://llvm.org">компилятором</a>, выбросить мышку, отрастить бороду и примкнуть к Церкви Святого Столлмана. Но лучше тогда сразу отправляйся в тред сишников, если не хочешь быть обоссанным другими сектантами за использование б-гомерзкого C++.
+				</p>
+				
+				<p>
+					<b>Q: </b>
+					<i>Не буду я все делать сам! Подавайте сюда софт, который все сделает за меня и подотрет мне жопу!</i>
+				
+					<br>
+				
+					<b>A: </b>
+					Без проблем:
+					
+					<ul>
+						<li><a href="http://cppcheck.sourceforge.net">Статический анализатор</a>, который умеет находить в коде ошибки и неоптимальные места. Швабодный. Есть плагин для Visual Studio</li>
+						<li>Более навороченный, но коммерческий <a href="http://www.viva64.com/ru/pvs-studio">аналог</a></li>
+						<li><a href="http://clang-analyzer.llvm.org">Встроенный в clang</a> статический анализатор</li>
+						<li><a href="https://vld.codeplex.com">Детектор утечек</a> для Visual Studio. Предельно прост в прикручивании</li>
+						<li>На порядок более мощная и сложная <a href="http://valgrind.org">утилита</a> для *nix, служащая тем же целям</li>
+						<li>Гугловские <a href="https://github.com/google/sanitizers">утилиты</a> для контроля корректности кода</li>
+						<li>Гугловский <a href="https://code.google.com/p/googlemock">фреймворк</a> для автоматизации тестирования</li>
+					</ul>
+					
+					<p>
+						Также не стоит забывать о том, что правильные посоны экономят свое время и нервы, используя мегагодные <a href="https://git-scm.com">git</a> и <a href="https://cmake.org">cmake</a> во всех проектах.
+					</p>
+				</p>
+				
+				<p>
+					<b>Q: </b>
+					<i>Мне надоело писать велосипеды, какие у вас тут популярные либы?</i>
+				
+					<br>
+					
+					<b>Q: </b>
+					<i>Нужно зделать %монструозная_хуйня_нейм, но я обосрался от одной мысли о написании ее с нуля, что же делать?</i>
+				
+					<br>
+				
+					<b>A: </b>
+					Гляди сюда:
+					
+					<ul>
+						<li>
+							<p>
+								<h3>boost</h3>
+								
+								<p>
+									Бесспорно, это самый популярный набор C++-библиотек. Не будет лукавством сказать, что C++ во многом обязан популярностью именно ему. Воистину всеобъемлющий, boost способен удовлетворить твои самые скотские фантазии. В нем есть практически все - от математических функций до сетевых компонент, от инструментов тестирования до динамических типов. Функции для работы с твоей мамашей там тоже есть. Разумеется, все это швабодное и работает на любых платформах. И да, boost является своеобразным инкубатором хороших библиотек, поэтому наиболее удачные из них с большой вероятностью можно будет увидеть после принятия очередного стандарта уже как часть стандартной библиотеки.
+								</p>
+
+								<p>
+									Недостатком boost можно считать его размер - более 300 мегабайт. Большинство компонент boost не являются независимыми, и попытка использовать один единственный контейнер обернется фактическим подключением 2/3 всего присутствующего в комплекте. Таким образом, если boost не будет использоваться на полную, лучше юзать другие, более специализированные библиотеки.
+								</p>
+
+								<ul>
+									<li><a href="http://www.boost.org">Скачать</a> бесплатно без смс</li>
+									<li><a href="http://www.solarix.ru/for_developers/cpp/boost/boost-library-list.shtml">Краткие аннотации</a> к большинству компонентов</li>
+									<li><a href="http://sindicollo.blogspot.ru/2008/09/boost.html">Документация</a> к некоторым компонентам</li>
+									<li><a href="http://www.boost.org/doc">Документация</a> (на ангельском)</li>
+								</ul>
+								
+								<p>
+									<b>Литература:</b>
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Ариндам Мукерджи</td>
+										<td>Learning Boost C++ Libraries</td>
+										<td>2015</td>
+										<td><a href="https://goo.gl/b0gPN1">https://goo.gl/b0gPN1</a> <i>(на ангельском)</i></td>
+									</tr>
+									
+								</table>
+								</div>
+								</p>
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Qt</h3>
+								
+								<p>
+									Существует швабодный кроссплатформенный фреймворк-надмножество C++ под названием Qt. Он содержит довольно большое количество компонент (для работы с сетью, базами данных, для юнит-тестирования и др.), но киллер-фичей и основным полем его применения являются возможности по разработке графических интерфейсов. Qt сам по себе, как расширение языка, предоставляет для этого более удобные средства, чем обычные библиотеки, а использование специализированных IDE наподобие Qt Creator позволяет в буквальном смысле собирать интерфейсы мышкой, а код писать только по существу.
+								</p>
+								
+								<p>
+									Тем не менее, использование Qt нельзя однозначно назвать хорошей практикой. Во многом это уже не C++, а другой язык, со своими концепциями и паттернами. Qt-код требует дополнительного препроцессинга при помощи встроенных в Qt утилит (т.н. метаобъектная компиляция), поэтому не получится просто подключить Qt как обычную библиотеку и использовать свой любимый компилятор без дополнительного софта. Нельзя сказать, что это существенное препятствие, но есть мнение, что использование Qt нарушает дух C++, раздувает машинный код и порождает макак-любителей кодогенерации.
+								</p>
+								
+								<p>
+									В настоящее время основные версии Qt - 4.8 и 5.х, полной обратной совместимости между ними нет <span class="spoiler">как в пистоне, ага</span>.
+								</p>
+
+								<ul>
+									<li><a href="http://www.qt.io/ru">Cкачать</a> бесплатно без смс</li>
+									<li><a href="http://doc.crossplatform.ru">Документация</a> к 4.8</li>
+									<li><a href="http://doc.qt.io">Более полная документация</a> к обеим версиям (на ангельском)</li>
+								</ul>
+								
+								<p>
+									<b>Литература:</b>
+								</p>
+								
+								<p>
+								<div>
+								<style>th{padding-top:5px}th{padding-bottom:5px}th{padding-left:10px}th{padding-right:10px}td{padding-top:5px}td{padding-bottom:5px}td{padding-left:10px}td{padding-right:10px}#cats td{color:#9a8080;}</style><br>
+								<table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
+								
+									<tr>
+										<th>Автор(ы)</th>
+										<th>Название</th>
+										<th>Год</th>
+										<th>Ссылка</th>
+									</tr>
+									
+									<tr>
+										<td>Макс Шлее</td>
+										<td>Qt 5.3. Профессиональное программирование на C++</td>
+										<td>2015</td>
+										<td><a href="https://goo.gl/aZ66gK">https://goo.gl/aZ66gK</a></td>
+									</tr>
+									
+									<tr>
+										<td>Макс Шлее</td>
+										<td>Qt 4.8. Профессиональное программирование на C++</td>
+										<td>2012</td>
+										<td>
+											<a href="https://goo.gl/Slb1In">https://goo.gl/Slb1In</a> <i>(книга)</i> +<br>
+											<a href="https://goo.gl/toUDWc">https://goo.gl/toUDWc</a> <i>(исходники примеров)</i>
+										</td>
+									</tr>
+									
+									<tr>
+										<td>Марк Саммерфилд</td>
+										<td>Qt. Профессиональное программирование</td>
+										<td>2011</td>
+										<td>
+											Только Qt 4.х:<br>
+											<a href="https://goo.gl/qpkZFm">https://goo.gl/qpkZFm</a> <i>(книга)</i> +<br>
+											<a href="https://goo.gl/LIIECh">https://goo.gl/LIIECh</a> <i>(исходники примеров)</i>
+										</td>
+									</tr>
+									
+								</table>
+								</div>
+								</p>
+							</p>
+						</li>
+						
+						<li>
+							<p>
+								<h3>Другие хорошие библиотеки</h3>
+								
+								<p>
+									Несколько специализированных библиотек для часто встречающихся задач. Все — маленькие, быстрые и простые в освоении:
+								</p>
+								
+								<ul>
+									<li><a href="http://curl.haxx.se">libcurl</a> - сишная библиотека для работы с сетью (существует также curlpp - крестовая обертка для нее, но использовать ее не стоит, ибо разработка заброшена еще в 2009 году)</li>
+									<li><a href="http://www.sfml-dev.org">SFML</a> - работа с графикой и аудио</li>
+									<li><a href="http://fltk.org">FLTK</a> - графические интерфейсы</li>
+								</ul>
+								
+								<p>
+									И еще <a href="http://en.cppreference.com/w/cpp/links/libs">куча</a> библиотек на любой вкус.
+								</p>
+							</p>
+						</li>
+					</ul>
+				</p>
+			</p>
+		</p>
+
+		</div>
+		</div>
+		</div>
+		</p>
+	</p>
+	
+	<hr>
+	
+	<p>
+		<b>Q: </b>
+			<i>Я прочитал все вышеперечисленное, теперь я гуру! Что дальше?</i>
+			
+			<br>
+			
+			<b>A: </b>
+			Дальше переходишь по <a href="http://cppquiz.org">ссылке</a>, пробуешь отвечать на вопросы и понимаешь, что ты пока в самом начале пути. Кроличья нора крестов практически бездонна, поэтому продолжать постигать тонкости и детали можно очень и очень долго. В то же время, на этом этапе у тебя должно быть достаточно знаний, чтобы уверенно писать неплохой код. Поэтому читай исходники открытого софта и библиотек, отправляй пулл-реквесты в них, читай книжки по предметным областям и общим методикам разработки, а дальше уже сможешь запилить свой проект или вкатиться в существующий.
+	</p>
+	
+	<hr>
+	
+	<p>
+	<div class="spoil">
+	<div class="smallfont"><input type="button" value="Архив тредов" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Архив тредов'; }"/>
+	</div>
+	<div class="alt2">
+	<div style="display: none;">
+		
+		<p>
+			<ul>
+				<li>
+					<p>
+						<h4>Предыдущие треды на архиваче</h4>
+						
+						<ol>
+							<li><a href="https://arhivach.org/thread/94971/">https://arhivach.org/thread/94971/</a></li>
+							<li><a href="https://arhivach.org/thread/94972/">https://arhivach.org/thread/94972/</a></li>
+							<li><a href="https://arhivach.org/thread/99414/">https://arhivach.org/thread/99414/</a></li>
+							<li><a href="https://arhivach.org/thread/100995/">https://arhivach.org/thread/100995/</a></li>
+							<li><a href="https://arhivach.org/thread/105148/">https://arhivach.org/thread/105148/</a></li>
+							<li><a href="https://arhivach.org/thread/109335/">https://arhivach.org/thread/109335/</a></li>
+							<li><a href="https://arhivach.org/thread/112797/">https://arhivach.org/thread/112797/</a></li>
+							<li><a href="https://arhivach.org/thread/114519/">https://arhivach.org/thread/114519/</a></li>
+							<li><a href="https://arhivach.org/thread/117109/">https://arhivach.org/thread/117109/</a></li>
+							<li><a href="https://arhivach.org/thread/120019/">https://arhivach.org/thread/120019/</a></li>
+							<li><a href="https://arhivach.org/thread/122683/">https://arhivach.org/thread/122683/</a></li>
+							<li><a href="https://arhivach.org/thread/124637/">https://arhivach.org/thread/124637/</a></li>
+							<li><a href="https://arhivach.org/thread/125532/">https://arhivach.org/thread/125532/</a></li>
+							<li><a href="https://arhivach.org/thread/127327/">https://arhivach.org/thread/127327/</a></li>
+							<li><a href="https://arhivach.org/thread/128133/">https://arhivach.org/thread/128133/</a></li>
+							<li><a href="https://arhivach.org/thread/134437/">https://arhivach.org/thread/134437/</a></li>
+							<li><a href="https://arhivach.org/thread/135285/">https://arhivach.org/thread/135285/</a></li>
+							<li><a href="https://arhivach.org/thread/139690/">https://arhivach.org/thread/139690/</a></li>
+							<li><a href="https://arhivach.org/thread/144812/">https://arhivach.org/thread/144812/</a></li>
+							<li><a href="https://arhivach.org/thread/147540/">https://arhivach.org/thread/147540/</a></li>
+							<li><a href="https://arhivach.org/thread/149983/">https://arhivach.org/thread/149983/</a></li>
+							<li><a href="https://arhivach.org/thread/151271/">https://arhivach.org/thread/151271/</a></li>
+							<li><a href="https://arhivach.org/thread/153304/">https://arhivach.org/thread/153304/</a></li>
+						</ol>
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						<h4>Старые ненумерованные треды</h4>
+						
+						<ul>
+							<li><a href="https://arhivach.org/thread/45477/">https://arhivach.org/thread/45477/</a></li>
+							<li><a href="https://arhivach.org/thread/48611/">https://arhivach.org/thread/48611/</a></li>
+							<li><a href="https://arhivach.org/thread/60085/">https://arhivach.org/thread/60085/</a></li>
+							<li><a href="https://arhivach.org/thread/66322/">https://arhivach.org/thread/66322/</a></li>
+							<li><a href="https://arhivach.org/thread/69413/">https://arhivach.org/thread/69413/</a></li>
+							<li><a href="https://arhivach.org/thread/73221/">https://arhivach.org/thread/73221/</a></li>
+							<li><a href="https://arhivach.org/thread/77999/">https://arhivach.org/thread/77999/</a></li>
+							<li><a href="https://arhivach.org/thread/79194/">https://arhivach.org/thread/79194/</a></li>
+							<li><a href="https://arhivach.org/thread/82038/">https://arhivach.org/thread/82038/</a></li>
+							<li><a href="https://goo.gl/vvs9GP/">https://goo.gl/vvs9GP/</a></li>
+							<li><a href="https://goo.gl/ZnBsYt/">https://goo.gl/ZnBsYt/</a></li>
+						</ul>
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						<h4>Отдельные Qt-треды</h4>
+						
+						<ul>
+							<li><a href="https://arhivach.org/thread/15387/">https://arhivach.org/thread/15387/</a></li>
+							<li><a href="https://arhivach.org/thread/65590/">https://arhivach.org/thread/65590/</a></li>
+						</ul>
+					</p>
+				</li>
+			<ul>
+		</p>
+		
+	</div>
+	</div>
+	</div>
+	</p>
+</p>
