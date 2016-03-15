@@ -180,7 +180,7 @@ ITT элита продолжает обсуждает будущее этого
 <li><b><a href="http://rutracker.org/forum/viewtopic.php?t=5082978">Курсы от O'Reilly</a></b> - набор курсов исключительно по C# от O'Reilly Media (28 часов, на английском)</li>
 
 <h3>Что еще нужно знать, чтобы взяли работать за еду?</h3>
-<li><b>SQL</b> - подойдет люая книг по MSSQL/MySQL, базовые запросы, SELECT, INSERT, DELETE, UPDATE. Джойны, индексы, нормализация. В контексте шарпа еще ORM: Entity Framework, Dapper</li>
+<li><b>SQL</b> - подойдет любая книга по MSSQL/MySQL: базовые запросы, SELECT, INSERT, DELETE, UPDATE. Джойны, индексы, нормализация. В контексте шарпа еще ORM: Entity Framework, Dapper</li>
 <li><b>Системы контроля версий</b> - обычно гита достаточно: add/commit/push, merge, rebase, checkout, remote's, разрешение конфликтов, трехпанельные дифф-менеджеры, cherry-pick</li>
 <li><b>Гитхабы-гитхабчики</b> - issues, организация пулл-реквестов, интеграция с appveyor, теги, релизы, маркдаун</li>
 <li><b>Алгоритмы</b> - сложность алгоритмов, сортировки (пузырек, быстрая, вставками), поиск, рекурсия, алгоритмы на строках</li>
@@ -208,20 +208,19 @@ A: Зависит от задачи. Для небольших проектов,
 A: Неправда. C# довольно активно развивается, недавно вышел новый компилятор, шестая версия шарпа, и уже активно разработывается седьмая. Весь дотнет понемногу становится опенсорсным, а ASP.NET становится независимым от платформы. В некотором смысле понемногу вымирают десктопные приложения с развитием веб-технологий, но в том же энтерпрайзе он еще очень даже востребован.<p>
 
 <p><b>Q: Какую ИДЕ выбрать?</b><br/>
-A: Для Windows самым очевидным вариантом будет Visual Studio (https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx). Студия распространяется в двух редакциях: бесплатная коммьюнити-версия и платный энтерпрейс эдишн. В большинстве случае будет достаточно Community-версии: она поддерживает и C#, C++, VB.NET и F#, а так же имеет возможность установки дополнений
-Для мака и никсов самый юзабельный вариант - MonoDevelop ( http://www.monodevelop.com/download/ ).
-Для vim можно использовать OmniSharp ( https://github.com/OmniSharp/omnisharp-vim ).
-Кросплатформенный полуредактор/полуIDE VS Code ( https://www.visualstudio.com/en-us/products/code-vs.aspx )
-Также существуют плагины для Atom'а и Sublime Text, но функциональность там достаточно сильно урезана.
-Кроме того, в данный момент JetBrains активно пилит свою IDE для шарпа (Project Rider), вероятно в ближайшее время станут доступны первые EAP. IDE заявлена как кросплатформенная, со всем решарпер-функционалом, поддержкой отладки, моно и .net core.
-SharpDevelop - еще одна IDE для C#, отличается малым размером (около 20мб) и опциональной портабельностью, при этом имея дизайнер WinForms и WPF, а также интеграцию с FxCop, StyleCop и прочими ништяками. Если хочется что-то по быстрому набросать, а выкачивать гигабйты нет желания, то возможно SharpDevelop будет лучшим вариантом.<p>
+A: Для Windows самым очевидным вариантом будет <b><a href="https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx">Visual Studio</a></b> Студия распространяется в двух редакциях: бесплатная коммьюнити-версия и платный энтерпрейс эдишн. В большинстве случае будет достаточно Community-версии: она поддерживает и C#, C++, VB.NET и F#, а так же имеет возможность установки дополнений
+<li><b><a href="http://www.monodevelop.com/download/">MonoDevelop</a></b> - Возможно самый юзабельный вариант для мака и никсов на данный момент</li>
+<li><b><a href="https://github.com/OmniSharp/omnisharp-vim">OmniSharp</a></b> - набор инструментов интеграции в различные редакторы (Vim, Sublime Text, Emacs)</li>
+<li><b><a href="https://www.visualstudio.com/en-us/products/code-vs.aspx">VS Code</a></b> - кросплатформенный полуредактор/полуIDE, начиная с недавнего времени поддерживает даже отладку</li>
+<li><b><a href="https://blog.jetbrains.com/dotnet/2016/01/13/project-rider-a-csharp-ide/">Project Rider</a></b> - IDE от JetBrains, которая находится на этапе тестирования. На сайте можно заполнить форму и получать первые EAP. В данный момент функционала мало и IDE еще достаточно нестабильная, но до релиза еще далеко</li>
+<li><b><a href="http://www.icsharpcode.net/opensource/sd/">SharpDevelop</a></b> - еще одна IDE для C#, отличается малым размером (около 20мб) и опциональной портабельностью, при этом имея дизайнер WinForms и WPF, а также интеграцию с FxCop, StyleCop и прочими ништяками. Если хочется что-то по быстрому набросать, а выкачивать гигабайты нет желания, то возможно SharpDevelop будет лучшим вариантом.</li>
+<li>Также существуют плагины для Atom'а и Sublime Text, но функциональность там достаточно сильно урезана.</li>
 
 <p><b>Пригоден ли С# для мобильной разработки</b><br/>
 A: Очень даже, гугли Xamarin. Если нужны инструменты для разработке под мобилы, ставь сразу VS2015 и при установке выбирай все нужные компоненты.
 Больше информации тут - https://msdn.microsoft.com/ru-ru/library/dn771552.aspx
-Из актуальной литературы
-- Xamarin Mobile Application Development
-- Xamarin Essentials<p>
+<li>Xamarin Mobile Application Development</li>
+<li>Xamarin Essentials</li>
 
 <h3>Дополнительные инструменты для разработки на C#</h3>
 <table border="1" style="border-color:Black; border-style:solid; border-width:2pt">
@@ -230,19 +229,19 @@ A: Очень даже, гугли Xamarin. Если нужны инструме
     <th>Описание</th>
 </tr>
 <tr>
-    <td><b>LINQPad</b></td>
-    <td>Cорт оф REPL, с возможностью быстрого подключения к БД и удобной визуализацией данных</td>
+    <td><b><a href="https://www.linqpad.net/Download.aspx">LINQPad</a></b></td>
+    <td>Cорт оф REPL, с возможностью быстрого подключения к БД и удобной визуализацией данных. Для большинства задач хватит бесплатной версии, а платную, в случае чего, можно найти в интернетах</td>
 </tr>
 <tr>
-    <td><b>dnSpy</b></td>
-    <td>Декомпилятор, малоизвестный форк ILSpy, где реализована возможность модификации IL-кода прямо в EXE и DLL файлах, отладка IL-кода и много других фич для reverse engineering'а. Плюс няшные темы как в студии</td>
+    <td><b><a href="https://github.com/0xd4d/dnSpy">dnSpy</a></b></td>
+    <td>Бесплатный декомпилятор, малоизвестный форк ILSpy, где реализована возможность модификации IL-кода прямо в EXE и DLL файлах, отладка IL-кода и много других фич для reverse engineering'а. Плюс няшные темы как в студии</td>
 </tr>
 <tr>
-    <td><b>dotPeek</b></td>
-    <td>бесплатный декомпилятор от JetBrains</td>
+    <td><b><a href="https://www.jetbrains.com/decompiler/">dotPeek</a></b></td>
+    <td>Бесплатный декомпилятор от JetBrains</td>
 </tr>
 <tr>
-    <td><b>scriptcs</b></td>
+    <td><b><a href="http://scriptcs.net/">scriptcs</a></b></td>
     <td>Для запуска C# кода как скриптов, возможность использовать как REPL</td>
 </tr>
 </table>
@@ -254,23 +253,23 @@ A: Очень даже, гугли Xamarin. Если нужны инструме
     <th>Описание</th>
 </tr>
 <tr>
-    <td><b>ReSharper</b></td>
+    <td><b><a href="https://www.jetbrains.com/resharper/">ReSharper</a></b></td>
     <td>Одно из известнейших. Рефакторинги, умный автокомплит, настраиваемый стиль кода. Платный, но можно стянуть с торрентов</td>
 </tr>
 <tr>
-    <td><b>Supercharger</b></td>
+    <td><b><a href="http://supercharger.tools/">Supercharger</a></b></td>
     <td>Показывает "карту" с классами, методами и всем остальным сбоку от кода с возможностью прыгать по ним</td>
 </tr>
 <tr>
-    <td><b>Indent Guides</b></td>
+    <td><b><a href="https://visualstudiogallery.msdn.microsoft.com/e792686d-542b-474a-8c55-630980e72c30">Indent Guides</a></b></td>
     <td>Показывает вертикальные линии на каждом уровне отступов</td>
 </tr>
 <tr>
-    <td><b>Format document on Save</b></td>
+    <td><b><a href="https://visualstudiogallery.msdn.microsoft.com/3ea1c920-69c4-441f-9979-ccc2752dac56">Format document on Save</a></b></td>
     <td>Форматирует код каждый раз при сохранении документа</td>
 </tr>
 <tr>
-    <td><b>Code Alignment</b></td>
+    <td><b><a href="https://visualstudiogallery.msdn.microsoft.com/7179e851-a263-44b7-a177-1d31e33c84fd">Code Alignment</a></b></td>
     <td>Выравнивает код по указанным символам. Удобно, например, при инициализации словарей или в перечислениях</td>
 </tr>
 </table>
