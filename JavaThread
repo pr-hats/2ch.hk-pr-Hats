@@ -1,0 +1,468 @@
+  <style>
+  .hidden-block {
+    display: none !important;
+  }
+  .row {
+    display: table-row;
+    padding: 4px 15px 4px 4px;
+  }
+  .column {
+    display: table-cell;
+    padding: 4px 15px 4px 4px;
+  }
+  .table {
+    display: table;
+  }
+  .even {
+    background-color: #DDD;
+  }
+  </style>
+  <div id="faq">
+    <h3>F.A.Q.</h3>
+    <p>
+      <b>Q: Зачем нужна Java, когда есть %языкname%?</b>
+      <br/>
+      <span>
+        A: Безусловно, любой уважающий себя программист должен знать несколько
+        языков. Сейчас, когда каждый первый выходящий язык призван убить джаву с
+        одного удара, может сложиться впечатление, что Java не нужна. Но они не
+        предлагают инфраструктуры, делая язык ограниченным в применении. А
+        синтаксический сахар в этих языках затрудняет понимание процессов,
+        которые выполняются за кадром, что делает программиста некомпетентным.
+        Java же простой как камень и потому бессмертный язык. Во время войны в
+        Ираке, американские солдаты выбрасывали свои ЯП, и подбирали Java.
+        Британские ученые провели исследование, в результате которого выявили 58
+        видов Java. Женщины Вестероса шьют флаги и слагают песни в честь Java.
+        Как тут <abbr title="[сарказм]">не</abbr> оставаться равнодушным?
+      </span>
+    </p>
+    <div class="expand-faq">
+      <span class="expand-large-comment a-link-emulator"
+          onclick="$('.expand-faq').toggleClass('hidden-block');">
+        Показать текст полностью
+      </span>
+    </div>
+    <div id="hidden-faq-body" class="expand-faq hidden-block">
+      <p>
+        <b>Q: Посоны, собираюсь учить джаву по 2/5/20 часов в день. За сколько
+        дней я выучу достаточно, чтобы зарабатывать фрилансом?
+        </b>
+        <br/>
+        <span>
+          A: На джаве фриланса нет. Хочешь фрилансить — дуй в ПХП/раби/1С тред
+        </span>
+      </p>
+      <p>
+        <b>Q: Как нет? А андроид?</b>
+        <br/>
+        <span>A: У андроида есть свой тред. Иди туда и там спрашивай.</span>
+      </p>
+      <p>
+        <b>Q: А что с удаленкой?</b>
+        <br/>
+        <span>A: Удаленка есть, но вкатиться на удаленку можно имея пару лет
+        опыта в офисе и хорошую самомотивацию.</span>
+      </p>
+      <p>
+        <b>Q: Как мне учить джаву?</b>
+        <br/>
+        <span>
+          A: Как учить тебе, можешь знать только
+          <a href="http://lurkmore.to/%D0%A2%D1%8B">ты</a> сам. Есть множество
+          материалов, которые устаревают на следующий день. Ниже приведен
+          одобренный аноном нестареющий список материалов, выбери то что тебе по
+          душе. Еще можешь заглянуть сюда
+          <a href="http://dou.ua/lenta/articles/java-beginner-guide-1/">
+            http://dou.ua/lenta/articles/java-beginner-guide-1/
+          </a> здесь хорошо структурированный учебный план по java.
+          Имей ввиду, что простого чтения/просмотра недостаточно, нужно
+          всегда держать открытой среду разработки, чтобы закреплять в ней
+          прочтенный параграф, и отвечать экспериментами на те вопросы, которые
+          остались открытыми для тебя, анон.
+        </span>
+      </p>
+      <p>
+        <b>Q: Что скажете за джавараш?</b>
+        <br/>
+        <span>
+          A: В наших тредах постоянно появляются люди, спрашивающие о джавараше.
+          Громко обьявляют, что начинают заниматься, задают пару тупых вопросов
+          и куда-то пропадают. Похоже, большинство адекватов бросают джавараш
+          из-за дебильных заданий типа "десять сраз скопипасти этот кусок кода".
+          Тем не менее, иногда появляются и люди, говорящие что прошли его
+          целиком, и что дальше задания получше. Короче, хочешь - пробуй, первые
+          десять занятий бесплатно же. Но, как минимум, лучше совмещать с
+          обучением по другим источникам.
+        </span>
+      </p>
+      <p>
+        <b>Q: Где брать свежие материалы?</b>
+        <br/>
+        <span>
+          A: Ссылки приведены ниже.
+        </span>
+      </p>
+      <p>
+        <b>Q: Какую лучше использовать среду разработки?</b>
+        <br/>
+        <span>
+          A: Для начинающего лучший выбор это
+          <a href="https://www.jetbrains.com/idea/">
+            Intellij IDEA Community Edition
+          </a> или <a href="https://netbeans.org/downloads/">Netbeans</a>.
+          Последний пользуется незаслуженно низкой популярностью, но он годен,
+          <a href="http://lurkmore.to/%D0%AF_%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%80%D1%83%D1%8E_%D1%8D%D1%82%D0%BE">
+            я гарантирую это
+          </a>
+          Использовать eclipse нельзя из-за зоопарка несовместимых друг с другом
+          версий и плагинов и плохим анализом кода. Кто-то скажет, что это все
+          можно допилить до ума напильником, но мы же не в напильник-треде.
+        </span>
+      </p>
+      <p>
+        <b>Q: Какие есть кусы по жабе и что они дают?</b>
+        <br/>
+        <span>
+          A: Курсы от крупных бодишопов, как правило, гарантируют
+          трудоустройство, если ты их хорошо закончил. В Украине сейчас зоопарк
+          курсов для <abbr title="разносчиков пицц">желающих</abbr> войти в
+          Айти. К таким курсам рекомендую относиться со скептицизмом, и почаще
+          читать
+          <a href="http://ebanoe.it/2016/04/07/you-can-do-it/">
+            http://ebanoe.it/
+          </a>
+        </span>
+      </p>
+      <p>
+        <b>Q: Какие требования к поступающему стажером на курсы?</b>
+        <br/>
+        <span>
+          A: Когда анон в 2013 шел в T-Systems, его спрашивали основы ооп и
+          простые sql-запросы. Почерпнуть ответы на вопросы про ООП можно из
+          книги Thinking in Java.
+        </span>
+      </p>
+      <p>
+        <b>Q: Какие требования для трудоустройства джуниором на работу?</b>
+        <br/>
+        <span>
+          A: Ответ сильно варьируется от георгафического расположения. В
+          <abbr title="Украина">некоторых</abbr> странах, человеку с трехлетним
+          опытом работы и широким кругозором могут предложить позицию
+          джуниора. Усредненный набор знаний для джуниора: ООП, коллекции, xml,
+          JPA, Spring, servlets, jsp, Threads, maven, ant, sql (джойны, хранимые
+          процедуры, индексы). Нередки случаи, когда анон с целью получить опыт
+          разработки уезжал в другой город.
+        </span>
+      </p>
+      <p>
+        <b>
+          Q: Что еще нужно знать, чтобы быть успешным перспективным
+          java-разработчиком?
+        </b>
+        <br/>
+        <span>
+          A: Английский язык, Ant, Maven, Gradle, xml, субд, linux крайне
+          желательно, html, js, css, bash, cmd, jenkins
+        </span>
+      </p>
+      <p>
+        <b>Q: Я готов к первому собеседованию.</b>
+        <br/>
+        <span>
+          A: Будь готов к тому, что ты его завалишь. Но зато получишь опыт
+          продажи себя, что тоже важно. <br/> Проверить свои знания можно здесь
+          <a href="http://www.quizful.net/test">http://www.quizful.net/test</a> и
+          здесь <a href="http://www.careercup.com/">http://www.careercup.com/</a>.
+          <br/> Вопросы на собеседовании
+          <a href="http://jsehelper.blogspot.ru/2016/01/blog-post_59.html">
+            http://jsehelper.blogspot.ru/2016/01/blog-post_59.html</a>
+          <span class="spoiler">ответы не всегда правильные</span> <br/> и здесь
+          <a href="http://becomejavasenior.com/blog/2015/07/01/327-interview-questions-java-developer/">
+            http://becomejavasenior.com/blog/2015/07/01/327-interview-questions-java-developer/
+          </a>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div id="literature-newbie">
+    <h3>Материалы</h3>
+    <div class="row table">
+      <div class="row">
+        <div class="column"><b>Сложность</b></div>
+        <div class="column"><b>Материал</b></div>
+        <div class="column"><b>Что это и зачем</b></div>
+      </div>
+      <div class="row even">
+        <div class="column">Beginner</div>
+        <div class="column">
+          <a href="http://rutracker.org/forum/viewtopic.php?t=3960993">
+            Head First Java, (2nd Edition)
+          </a>
+        </div>
+        <div class="column">Для совсем нулячих простым языком.</div>
+      </div>
+      <div class="row">
+        <div class="column">Beginner</div>
+        <div class="column">
+          <a href="http://www.amazon.com/Core-Volume-I-Fundamentals-Edition-Series/dp/0137081898">
+            Core Java (9th edition)
+          </a>
+        </div>
+        <div class="column">Тоже для нубасов, но на серьёзных щщах.</div>
+      </div>
+      <div class="row even">
+        <div class="column">Medium</div>
+        <div class="column">
+          <a href="http://rutracker.org/forum/viewtopic.php?t=4941725">
+            Thinking in Java (4th Edition)
+          </a>
+        </div>
+        <div class="column">
+          Для тех, кто уже умеет в программирование на другом языке, но хочет
+          перекатиться. Анон советует пропускать мутные главы про запуск из
+          консоли и работу с classpath. Для этих целей сейчас есть Maven, а
+          класслоадеры сами придут чуть позже.
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://rutracker.org/forum/viewtopic.php?t=2127002">
+            Effective Java (2nd Edition)
+          </a>
+        </div>
+        <div class="column">
+          Для тех, кто знает джаву, но хочет перестать писать костыли.
+        </div>
+      </div>
+      <div class="row even">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1119067901.html">
+            Oracle Certified Professional Java SE 8 Programmer II Study Guide
+          </a>
+        </div>
+        <div class="column">
+          Boyarsky and Selikoff - Oracle Certified Associate Java SE 8
+          Programmer II Study Guide. Книга в первую очередь для подготовки к
+          сертификации, однако, полезна будет еще тем, кто хочет глубже понимать
+          те процессы, с которыми приходится иметь дело каждый день.
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://jcip.net/">
+            Java: concurrency in practice
+          </a>
+        </div>
+        <div class="column">
+          Книга от авторов java.util.concurrent.*. Освещает проблемы при
+          многопоточном программировании и пути их решения.
+        </div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Medium</div>
+        <div class="column">
+          <a href="http://www.tutorialspoint.com/java_technology_tutorials.htm">
+            http://www.tutorialspoint.com/java_technology_tutorials.htm
+          </a>
+        </div>
+        <div class="column">Годные туториалы - коротко и доступно.</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Hard</div>
+        <div class="column">
+          <a href="http://docs.oracle.com/javase/tutorial/">
+            http://docs.oracle.com/javase/tutorial/
+          </a>
+        </div>
+        <div class="column">
+          Хороший туториал если уже есть знания по java 6-7, и нужно быстро
+          подтянуть до восьмерки.
+        </div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Various</div>
+        <div class="column">
+          <a href="http://www.proklondike.com/books/java.html">
+            http://www.proklondike.com/books/java.html
+          </a>
+        </div>
+        <div class="column">Скачать без смс и регитрации мокрые книжечки.</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Beginner</div>
+        <div class="column">
+          <a href="https://habrahabr.ru/company/golovachcourses/blog/215275/">
+            https://habrahabr.ru/company/golovachcourses/blog/215275/
+          </a>
+        </div>
+        <div class="column">
+          Более 9000 часов видеокурсов от Головача Ивана. Анон рекомендует
+          выбирать темы, а не смотреть все подряд.
+        </div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Beginner</div>
+        <div class="column">
+          <a href="http://codingbat.com/java">http://codingbat.com/java</a>
+        </div>
+        <div class="column">Задачи уровня laba1.pas</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Beginner</div>
+        <div class="column">
+          <a href="http://codehunt.com/">http://codehunt.com/</a>
+        </div>
+        <div class="column">Задачи, стилизованные под флеш-аркаду</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Medium</div>
+        <div class="column">
+          <a href="http://programmr.com/zone/java">
+            http://programmr.com/zone/java
+          </a>
+        </div>
+        <div class="column">Задачи чуть посерьезнее</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Medium</div>
+        <div class="column">
+          <a href="http://codingame.com/puzzles">
+            http://codingame.com/puzzles
+          </a>
+        </div>
+        <div class="column">Еще немного задач в игровой форме.</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Various</div>
+        <div class="column">
+          <a href="http://postimg.org/image/xdfbvgps9/">
+            http://postimg.org/image/xdfbvgps9/
+          </a>
+        </div>
+        <div class="column">Рулеточка</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://codeforces.com/">http://codeforces.com/</a>
+        </div>
+        <div class="column">Олимпиадка</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Various</div>
+        <div class="column">
+          <a href="http://eax.me/programming-language-learning/">
+            http://eax.me/programming-language-learning/
+          </a>
+        </div>
+        <div class="column">Примеры той-проектов</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Medium</div>
+        <div class="column">
+          <a href="http://www.w3schools.com/sql/default.asp">
+            http://www.w3schools.com/sql/default.asp
+          </a>
+        </div>
+        <div class="column">Туториалы по SQL</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://www.sql-ex.ru/">http://www.sql-ex.ru/</a>
+        </div>
+        <div class="column">Туториалы по SQL с кармочкой</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="https://www.coursera.org/course/algs4partI">
+            https://www.coursera.org/course/algs4partI
+          </a>
+        </div>
+        <div class="column">
+          Курсы по алгоритмам от принстонского университета
+        </div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://www.ozon.ru/context/detail/id/18319699/">
+            Алгоритмы на Java
+          </a>
+        </div>
+        <div class="column">
+          Книга Седжвика и Уэйна «Алгоритмы на Java» является классическим
+          справочным руководством в котором содержится необходимый объем знаний
+          для программиста в области алгоритмов, накопленных за последние
+          несколько десятилетий
+        </div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Any</div>
+        <div class="column">
+          <a href="https://google.github.io/styleguide/javaguide.html">
+            https://google.github.io/styleguide/javaguide.html
+          </a>
+        </div>
+        <div class="column">Стайлгайд от гугла</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="https://blog.jooq.org/">https://blog.jooq.org/</a>
+        </div>
+        <div class="column">Java, SQL, and jOOQ</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Advanced</div>
+        <div class="column">
+          <a href="http://virtualjug.com/podcast/">
+            http://virtualjug.com/podcast/
+          </a>
+        </div>
+        <div class="column">Подкасты</div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Various</div>
+        <div class="column">
+          <a href="https://www.reddit.com/r/java">
+            https://www.reddit.com/r/java
+          </a>
+        </div>
+        <div class="column">Треды на реддите</div>
+      </div>
+      <div class="row expand-table hidden-block">
+        <div class="column">Various</div>
+        <div class="column">
+          <a href="https://github.com/akullpp/awesome-java">
+            https://github.com/akullpp/awesome-java
+          </a>
+        </div>
+        <div class="column">
+          Список java фреймворков, библиотек и ПО на любой вкус
+        </div>
+      </div>
+      <div class="row even expand-table hidden-block">
+        <div class="column">Other</div>
+        <div class="column">
+          <a href="https://github.com/pr-hats/2ch.hk-pr-Hats">
+            https://github.com/pr-hats/2ch.hk-pr-Hats
+          </a>
+        </div>
+        <div class="column">
+          Гитхаб с шапкой для тренда
+        </div>
+      </div>
+    </div>
+    <div class="expand-table">
+      <span class="expand-large-comment a-link-emulator"
+          onclick="$('.expand-table').toggleClass('hidden-block');">
+        Показать таблицу полностью
+      </span>
+    </div>
+  </div>
